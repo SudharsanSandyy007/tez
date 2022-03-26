@@ -1,0 +1,59 @@
+.wallet {
+  background-color: rgb(60, 60, 206);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.walletTag {
+  background-color: white;
+  min-height: 80vh;
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.walletProfilePic {
+  position: relative;
+  top: -50px;
+}
+
+.walletTag > .MuiAvatar-root {
+  height: 150px;
+  width: auto;
+}
+
+.walletBox {
+  min-width: 90%;
+  margin: 30px;
+  transition: 0.3s;
+}
+.walletBox:hover {
+  transform: scale(1.01);
+}
+.walletBox__top {
+  display: flex;
+  padding: 15px;
+  background-color: rgb(180, 180, 180);
+  flex: 1;
+}
+.walleticn {
+  font-size: 40px;
+  margin-right: 20px;
+}
+.walletBox__bottom {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.walletBox__bottom:hover {
+  background-color: rgb(0, 165, 36);
+  cursor: pointer;
+}

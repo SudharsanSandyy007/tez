@@ -1,0 +1,112 @@
+.filter {
+  max-height: 550px;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 2px;
+  margin: 30px 100px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: sticky;
+  top: 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.filter__top {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+.filter__top > div {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.filter__mid {
+  overflow-y: scroll;
+}
+.filterMid__option > p {
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+.filterMid__option {
+  padding: 10px;
+}
+
+.filterMid__option > select {
+  padding: 10px;
+  width: 90%;
+  margin: 10px;
+}
+.filterMid__option > input {
+  width: 85%;
+  margin: 5px 15px;
+}
+.parking {
+  display: flex;
+  align-items: center;
+}
+.parkingYes,
+.parkingNo {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.parkingYes > input,
+.parkingNo > input {
+  margin-right: 2px;
+}
+
+.preferences {
+  display: flex;
+}
+
+.preferences > div {
+  padding: 10px;
+}
+.preferences > div > div > input {
+  margin-right: 10px;
+}
+
+.filterBtmBtn {
+  background-color: rgb(255, 25, 64);
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.filterBtmBtn:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.filter__bottom {
+  background-color: white;
+  padding: 10px 0px 0px 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

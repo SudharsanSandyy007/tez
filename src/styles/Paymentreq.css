@@ -1,0 +1,11 @@
+.paymentreq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #7cffcb;
+  padding: 25px;
+  background-image: linear-gradient(315deg, #7cffcb 0%, #74f2ce 74%);
+}

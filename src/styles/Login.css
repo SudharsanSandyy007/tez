@@ -1,0 +1,58 @@
+.login__container {
+  background-color: #fc9842;
+
+  background-image: linear-gradient(315deg, #fe5f75 0%, #fc9842 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.login__container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.login__logo {
+  font-size: 30px;
+}
+.login__logo > h4 {
+  transition: 0.3s;
+}
+.login__logo > h4:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.login__logo > h4 > div {
+  display: flex;
+  align-items: center;
+}
+.login__logo > h4 > div > .MuiSvgIcon-root {
+  font-size: 50px;
+}
+.login {
+  background-color: white;
+  min-height: 350px;
+  min-width: 400px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.login__btn {
+  display: flex;
+  align-items: center;
+  background-color: rgb(180, 180, 180);
+  border-radius: 50px;
+  padding: 5px 15px;
+  transition: 0.3s;
+}
+.login__btn:hover {
+  transform: scale(1.05);
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.googlelogo {
+  max-height: 30px;
+}

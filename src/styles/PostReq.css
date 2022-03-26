@@ -1,0 +1,99 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  max-width: 750px;
+  background-color: rgb(252, 243, 243);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 40px;
+}
+.post__info {
+  display: flex;
+  align-items: center;
+}
+
+.post__info > div {
+  margin: 10px;
+}
+
+.post__row1,
+.post__row2,
+.post__row3 {
+  padding: 10px;
+}
+.post__row2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.post__row3 {
+  display: flex;
+}
+
+.post__row3Left > img {
+  max-width: 270px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.post__row3Right__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.post__row3Right__top {
+  display: flex;
+}
+
+.post__row3RightTop_Option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.post__row3RightBottom__option {
+  padding: 10px;
+}
+
+.post__row3 {
+  padding: 10px;
+}
+.post__row3Left {
+  flex: 0.4;
+}
+.post__row3Right {
+  flex: 0.6;
+}
+
+.acceptreq,
+.rejectreq {
+  padding: 10px;
+  margin: 50px 0px;
+}
+
+.acceptreq {
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.acceptreq:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.rejectreq {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.rejectreq:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

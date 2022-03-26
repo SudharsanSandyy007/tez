@@ -1,0 +1,79 @@
+.home {
+  display: grid;
+  place-content: center;
+  min-width: 100vw;
+  background-color: #aff6cf;
+  background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
+}
+
+.home__container {
+  background-color: white;
+  min-height: 30vh;
+  min-width: 80vw;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.home__searchbar {
+  width: 100%;
+}
+.home__searchbar > form {
+  display: flex;
+  place-content: center;
+}
+
+.home__searchbar__selectPlace {
+  padding: 15px;
+  width: 70%;
+}
+
+.home__searchButton {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(255, 30, 68);
+  color: white;
+}
+
+.home__container1 {
+  background-color: white;
+  min-height: 200px;
+  min-width: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.container__option {
+  min-height: 200px;
+  min-width: 200px;
+  background-color: rgb(112, 112, 112);
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-around;
+}
+
+.container__option > .MuiSvgIcon-root {
+  font-size: 100px;
+}
+
+.container__optionsTop {
+  display: flex;
+  align-items: center;
+}
+
+.container__optionsBottom {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}

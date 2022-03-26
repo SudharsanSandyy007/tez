@@ -1,0 +1,27 @@
+.yourbookingscomp {
+  background-color: aqua;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.yourbookingscomp__middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.ybcBottom__renthistory > table {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+.yourbookingscomp__bottom {
+  padding: 10px;
+}

@@ -1,0 +1,8 @@
+.messageelement{
+    display: flex;
+    align-items: center;
+}
+
+.messageelement > div{
+    margin: 5px;
+}
