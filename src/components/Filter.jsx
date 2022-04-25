@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Filter.css";
-function Filter() {
+function Filter({ filterSearch }) {
+  const [aprtType, setaprtType] = useState("");
+
   return (
     <div className="filter">
       <div className="filter__top">
@@ -9,10 +11,16 @@ function Filter() {
       <div className="filter__mid">
         <div className="filterMid__option">
           <p>Appartment type: </p>
-          <select name="aprtType" id="">
-            <option value="">1BHK</option>
-            <option value="">2BHK</option>
-            <option value="">3BHK</option>
+          <select
+            name="aprtType"
+            onChange={(e) => {
+              setaprtType(e.target.value);
+            }}
+            id=""
+          >
+            <option value="1">1BHK</option>
+            <option value="2">2BHK</option>
+            <option value="3">3BHK</option>
           </select>
         </div>
 
@@ -73,7 +81,14 @@ function Filter() {
         </div>
       </div>
       <div className="filter__bottom">
-        <div className="filterBtmBtn">Apply filters and search!</div>
+        <div
+          onClick={() => {
+            filterSearch(aprtType);
+          }}
+          className="filterBtmBtn"
+        >
+          Apply filters and search!
+        </div>
       </div>
     </div>
   );

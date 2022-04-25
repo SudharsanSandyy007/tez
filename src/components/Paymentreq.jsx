@@ -20,7 +20,7 @@ function Paymentreq() {
   useEffect(() => {
     const colref = collection(db, "paymentreq");
     const q = query(colref, where("to", "==", user.email));
-    getDocs(q).then((snapshot) => {
+    onSnapshot(q, (snapshot) => {
       let treq = [];
       snapshot.docs.forEach((doc) => {
         treq.push({

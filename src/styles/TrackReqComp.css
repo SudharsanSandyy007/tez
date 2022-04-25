@@ -108,3 +108,12 @@
   width: 100%;
   margin: 20px 0px;
 }
+
+.TrackReq_cancelBtn {
+  transition: 0.3s;
+}
+
+.TrackReq_cancelBtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

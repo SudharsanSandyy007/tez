@@ -29,9 +29,9 @@ function Home() {
               <option value="Select a city" disabled>
                 Select a city
               </option>
-              <option value="chennai">Chennai</option>
-              <option value="vellore">Vellore</option>
-              <option value="coimbatore">Coimbatore</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Vellore">Vellore</option>
+              <option value="Coimbatore">Coimbatore</option>
               <option value="Banglore">Banglore</option>
             </select>
 

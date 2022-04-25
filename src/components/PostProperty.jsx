@@ -23,7 +23,6 @@ function PostProperty() {
     const postURL = document.querySelector("#postURL").value;
     const nearbyplaces = document.querySelector("#nearbyplaces").value;
     const ownerph = document.querySelector("#ownerph").value;
-    alert(apartmentType);
 
     const collRef = collection(db, "posts");
     addDoc(collRef, {
@@ -49,7 +48,9 @@ function PostProperty() {
       status: "TOLET",
     })
       .then((result) => {
-        alert("passed");
+        alert("PROPERTY POSTED!!!");
+        const postForm = document.getElementById("postform");
+        postForm.reset();
       })
       .catch((err) => {
         alert("failled");
@@ -65,11 +66,11 @@ function PostProperty() {
         </div>
 
         <div className="postaproperty__middle">
-          <form action="" onSubmit={postProp}>
+          <form action="" id="postform" onSubmit={postProp}>
             <div className="postaproperty__form__left">
               <div className="postapropertyFormLeft__option">
                 <h4>Apartment Type*</h4>
-                <select className="ipbox" name="" id="appartment_type">
+                <select className="ipbox" name="" id="appartment_type" required>
                   <option value="Appartment">Appartment</option>
                   <option value="Independent House">Independent House</option>
                 </select>
@@ -81,22 +82,29 @@ function PostProperty() {
                   id="city"
                   className="ipbox"
                   placeholder="Enter City"
+                  required
                 />
               </div>
               <div className="postapropertyFormLeft__option">
                 <h4>Enter Detailed Address*</h4>
-                <textarea name="" id="address" cols="30" rows="10"></textarea>
+                <textarea
+                  name=""
+                  id="address"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
               </div>
               <div className="postapropertyFormLeft__option">
                 <h4>Parking Available?*</h4>
-                <select className="ipbox" name="" id="parking">
+                <select className="ipbox" name="" id="parking" required>
                   <option value="1">Yes</option>
                   <option value="0">No</option>
                 </select>
               </div>
               <div className="postapropertyFormLeft__option">
                 <h4>No.Of Bed Rooms?*</h4>
-                <select className="ipbox" name="" id="bedrooms">
+                <select className="ipbox" name="" id="bedrooms" required>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -109,6 +117,7 @@ function PostProperty() {
                   id="postURL"
                   placeholder="Enter Image URL"
                   className="ipbox"
+                  required
                 />
               </div>
               <div className="postapropertyFormLeft__option">
@@ -120,7 +129,7 @@ function PostProperty() {
             <div className="postaproperty__form__right">
               <div className="postapropertyFormRight__option">
                 <h4>Built Up Area (in Sq.ft)*</h4>
-                <input className="ipbox" id="sqrft" type="text" />
+                <input className="ipbox" id="sqrft" type="text" required />
               </div>
 
               <div className="postapropertyFormRight__option">
@@ -130,6 +139,7 @@ function PostProperty() {
                   className="ipbox"
                   type="text"
                   placeholder="Enter locality"
+                  required
                 />
               </div>
               <div className="postapropertyFormRight__option">
@@ -139,6 +149,7 @@ function PostProperty() {
                   className="ipbox"
                   type="text"
                   placeholder="Enter Amount"
+                  required
                 />
               </div>
               <div className="postapropertyFormRight__option">
@@ -148,12 +159,13 @@ function PostProperty() {
                   id="deposit"
                   type="text"
                   placeholder="Enter Amount"
+                  required
                 />
               </div>
 
               <div className="postapropertyFormRight__option">
                 <h4>No.Of Kitchen?*</h4>
-                <select className="ipbox" name="" id="kitchen">
+                <select className="ipbox" name="" id="kitchen" required>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -161,7 +173,7 @@ function PostProperty() {
               </div>
               <div className="postapropertyFormRight__option">
                 <h4>No.Of Bathrooms Rooms?*</h4>
-                <select className="ipbox" name="" id="bathrooms">
+                <select className="ipbox" name="" id="bathrooms" required>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="2">3</option>
@@ -174,6 +186,7 @@ function PostProperty() {
                   placeholder="Enter nearby places"
                   id="nearbyplaces"
                   className="ipbox"
+                  required
                 />
               </div>
               <div className="postapropertyFormRight__option">
@@ -183,6 +196,7 @@ function PostProperty() {
                   id="ownerph"
                   placeholder="Enter owner's phone number"
                   className="ipbox"
+                  required
                 />
               </div>
             </div>

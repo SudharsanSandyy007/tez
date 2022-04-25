@@ -51,7 +51,9 @@ function PostReq({
     updateDoc(docref, {
       status: "ACCEPTED",
     })
-      .then((responce) => {})
+      .then((responce) => {
+        e.target.innerHTML = "ACCEPTED";
+      })
       .catch((err) => {});
   };
   const rejectReq = (e) => {
@@ -59,7 +61,9 @@ function PostReq({
     updateDoc(docref, {
       status: "REJECTED",
     })
-      .then((responce) => {})
+      .then((responce) => {
+        e.target.innerHTML = "REJECTED";
+      })
       .catch((err) => {});
   };
 

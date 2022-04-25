@@ -55,9 +55,8 @@ function Post({
       requestedOn: serverTimestamp(),
     })
       .then((result) => {
-        alert("passed");
         e.target.innerHTML = "REQUESTED";
-        e.target.disabled = true;
+        e.target.disabled = "disabled";
       })
       .catch((err) => {
         alert("failled");
@@ -72,7 +71,7 @@ function Post({
         </div>
         <div className="post__infoRight">
           <h2>{displayName}</h2>
-          <p>{new Date(timestamp?.toDate()).toUTCString()}</p>
+          <p>{new Date(timestamp?.toDate()).toLocaleString()}</p>
         </div>
       </div>
       <div className="post__row1">

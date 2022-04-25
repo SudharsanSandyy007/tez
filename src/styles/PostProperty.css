@@ -55,3 +55,7 @@ option {
   color: white;
   font-weight: 600;
 }
+
+.postprop___subbtn:hover {
+  cursor: pointer;
+}

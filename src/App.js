@@ -17,6 +17,7 @@ import Wallet from "./components/Wallet";
 import Filter from "./components/Filter";
 function App() {
   const [{ user }] = useStateValue();
+
   return (
     <div className="app">
       {user ? (
@@ -39,7 +40,6 @@ function App() {
                 <div className="app__cover rntaprop ">
                   <div className="app__body rntapropCont">
                     <Feed />
-                    <Filter />
                   </div>
                 </div>
               }

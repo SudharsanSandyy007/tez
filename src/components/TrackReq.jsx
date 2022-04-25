@@ -23,7 +23,7 @@ function TrackReq() {
     const q = query(colref, where("from", "==", user.email));
     let treq = [];
 
-    getDocs(q).then((snapshot) => {
+    onSnapshot(q, (snapshot) => {
       snapshot.docs.forEach((doc) => {
         treq.push({ id: doc.id, ...doc.data() });
       });

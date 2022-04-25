@@ -94,14 +94,16 @@ function TrackReqComp({
     e.preventDefault();
     const docref = doc(db, "paymentreq", reqid);
     deleteDoc(docref).catch((err) => {});
+    alert("REQUEST CANCELLED!!!");
+    window.location.reload();
   };
 
   const makePayment = (e) => {
     e.preventDefault();
 
     var options = {
-      key: "rzp_test_KJIRu7kUHgB9iH",
-      key_secret: "nmTV9B8YUvRzjWkhj73xpeWs",
+      key: "rzp_live_ffQE7ZPSh9FoGY",
+      key_secret: "lQie76WjJdNNpEZ00BddjTbQ",
       amount: deposit * 100,
       currency: "INR",
       name: "RENT A HOUSE",
@@ -140,7 +142,10 @@ function TrackReqComp({
           updateDoc(docref, {
             amount: damt,
           })
-            .then(alert("WALLET UPDATED"))
+            .then(() => {
+              alert("PAYMENT SUCCESSFULL !!!");
+              window.location.reload();
+            })
             .catch((e) => {});
         }
       },
@@ -233,6 +238,7 @@ function TrackReqComp({
         Nearby Places: {nearbyplaces}
         {rstatus != "BOOKED" && (
           <button
+            className="TrackReq_cancelBtn"
             style={{
               padding: "10px",
               margin: "0px 20px",
